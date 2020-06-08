@@ -11,13 +11,43 @@
     "dev": "yarn ts-node src/index.ts",
     "prepare": "yarn build",
     "start": "NODE_ENV=production node dist/index.js",
+    "storybook": "start-storybook -p 8017",
     "test": "NODE_ENV=test jest",
     "ts-node": "ts-node"
   },
   "dependencies": {
-    "@yarnaimo/rain": "^0.6.0"
+    "@emotion/core": "^10.0.28",
+    "@emotion/styled": "^10.0.27",
+    "@rmwc/ripple": "^6.0.14",
+    "@sindresorhus/is": "^2.1.1",
+    "csx": "^10.0.1",
+    "feather-icons": "^4.28.0",
+    "lifts": "^0.1.2",
+    "material-colors": "^1.2.6",
+    "react": "^16.13.1",
+    "react-dom": "^16.13.1"
   },
   "devDependencies": {
-    "@yarnaimo/tss": "^0.2.0"
+    "@storybook/addon-a11y": "^6.0.0-beta.22",
+    "@storybook/addon-actions": "^6.0.0-beta.22",
+    "@storybook/addon-knobs": "^6.0.0-beta.22",
+    "@storybook/addon-links": "^6.0.0-beta.22",
+    "@storybook/addon-storyshots": "^6.0.0-beta.22",
+    "@storybook/addon-viewport": "^6.0.0-beta.22",
+    "@storybook/preset-typescript": "^3.0.0",
+    "@storybook/react": "^6.0.0-beta.22",
+    "@types/feather-icons": "^4.7.0",
+    "@types/react": "^16.9.35",
+    "@types/react-dom": "^16.9.8",
+    "@yarnaimo/eslint-config": "^0.0.3",
+    "@yarnaimo/tss": "^0.3.1",
+    "babel-loader": "^8.1.0",
+    "babel-plugin-emotion": "^10.0.33",
+    "jest-css-modules": "^2.1.0",
+    "react-test-renderer": "^16.13.1",
+    "storybook": "^6.0.0-beta.22"
+  },
+  "peerDependencies": {
+    "babel-plugin-emotion": "^10.0.33"
   }
 }
