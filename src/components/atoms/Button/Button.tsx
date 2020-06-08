@@ -27,12 +27,13 @@ export const Button = ({
     color,
     icon,
     children,
+    ...props
 }: Button.MainP) => {
     const buttonColors = useButtonColor(variant, color)
 
     return (
         <Ripple>
-            <ButtonBox height={height} {...buttonColors}>
+            <ButtonBox height={height} {...buttonColors} {...props}>
                 {icon && (
                     <ButtonIconBox size={height * 0.5}>{icon}</ButtonIconBox>
                 )}

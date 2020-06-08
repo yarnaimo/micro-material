@@ -26,12 +26,13 @@ export const IconButton = ({
     variant = 'filled',
     color,
     children,
+    ...props
 }: IconButton.MainP) => {
     const buttonColors = useButtonColor(variant, color)
 
     return (
         <Ripple>
-            <IconButtonBox size={size} {...buttonColors}>
+            <IconButtonBox size={size} {...buttonColors} {...props}>
                 <IconBox size={roundToEven(size * 0.375 + 3)}>
                     {children}
                 </IconBox>
