@@ -1,11 +1,66 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`Storyshots Button Basic 1`] = `
+.emotion-1 * {
+  box-sizing: border-box;
+}
+
+.emotion-1 button,
+.emotion-1 input,
+.emotion-1 optgroup,
+.emotion-1 select,
+.emotion-1 textarea {
+  font-family: inherit;
+}
+
+.emotion-0 {
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-align-content: flex-start;
+  -ms-flex-line-pack: start;
+  align-content: flex-start;
+  margin: 0;
+  padding: 0;
+  border: none;
+  outline: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  cursor: pointer;
+  font-weight: 600;
+  background: #FCB645;
+  color: #FFFFFF;
+  border-radius: 6px;
+  padding-right: 11px;
+  padding-left: 11px;
+  height: 32px;
+  min-width: 72px;
+  font-size: 12px;
+}
+
+.emotion-0::before,
+.emotion-0::after {
+  background-color: #FFFFFF;
+}
+
 <div
-  className="css-1pdwlf"
+  className="emotion-1"
 >
   <a
-    className="mdc-ripple-surface css-nobgju"
+    className="mdc-ripple-surface emotion-0"
     color="#FCB645"
     height={32}
     onBlur={[Function]}
@@ -24,11 +79,86 @@ exports[`Storyshots Button Basic 1`] = `
 `;
 
 exports[`Storyshots Button Icon 1`] = `
+.emotion-2 * {
+  box-sizing: border-box;
+}
+
+.emotion-2 button,
+.emotion-2 input,
+.emotion-2 optgroup,
+.emotion-2 select,
+.emotion-2 textarea {
+  font-family: inherit;
+}
+
+.emotion-1 {
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-align-content: flex-start;
+  -ms-flex-line-pack: start;
+  align-content: flex-start;
+  margin: 0;
+  padding: 0;
+  border: none;
+  outline: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  cursor: pointer;
+  font-weight: 600;
+  background: #FCB645;
+  color: #FFFFFF;
+  border-radius: 50%;
+  width: 40px;
+  height: 40px;
+}
+
+.emotion-1::before,
+.emotion-1::after {
+  background-color: #FFFFFF;
+}
+
+.emotion-0 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-align-content: flex-start;
+  -ms-flex-line-pack: start;
+  align-content: flex-start;
+  width: 18px;
+  height: 18px;
+}
+
 <div
-  className="css-1pdwlf"
+  className="emotion-2"
 >
   <button
-    className="mdc-ripple-surface css-10vdeet"
+    className="mdc-ripple-surface emotion-1"
     color="#FCB645"
     onBlur={[Function]}
     onFocus={[Function]}
@@ -42,7 +172,7 @@ exports[`Storyshots Button Icon 1`] = `
     style={Object {}}
   >
     <div
-      className="css-10lfc66"
+      className="emotion-0"
       size={18}
     >
       <div

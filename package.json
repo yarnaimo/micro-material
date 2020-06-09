@@ -44,6 +44,7 @@
     "babel-loader": "^8.1.0",
     "babel-plugin-emotion": "^10.0.33",
     "jest-css-modules": "^2.1.0",
+    "jest-emotion": "^10.0.32",
     "react-test-renderer": "^16.13.1",
     "storybook": "^6.0.0-beta.22"
   },
