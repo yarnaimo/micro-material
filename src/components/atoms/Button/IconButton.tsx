@@ -4,7 +4,7 @@ import { mixin } from '../../../mixins'
 import { Children } from '../../../types/react'
 import { roundToEven } from '../../../utils'
 import { IconBox } from '../IconBox'
-import { Ripple } from '../Ripple'
+import { withRipple } from '../Ripple'
 import { ButtonBoxBase } from './_ButtonBoxBase'
 import { ButtonColorP, ButtonVariant } from './_types'
 import { useButtonColor } from './_utils'
@@ -21,25 +21,25 @@ export declare namespace IconButton {
     } & ButtonColorP
 }
 
-export const IconButton = ({
-    size = 40,
-    variant = 'filled',
-    color,
-    children,
-    ...props
-}: IconButton.MainP) => {
-    const buttonColors = useButtonColor(variant, color)
+export const IconButton = withRipple(
+    ({
+        size = 40,
+        variant = 'filled',
+        color,
+        children,
+        ...props
+    }: IconButton.MainP) => {
+        const buttonColors = useButtonColor(variant, color)
 
-    return (
-        <Ripple>
+        return (
             <IconButtonBox size={size} {...buttonColors} {...props}>
                 <IconBox size={roundToEven(size * 0.375 + 3)}>
                     {children}
                 </IconBox>
             </IconButtonBox>
-        </Ripple>
-    )
-}
+        )
+    },
+)
 
 const IconButtonBox = styled(ButtonBoxBase)<IconButton.BoxP>(
     {

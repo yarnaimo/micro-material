@@ -3,7 +3,7 @@ import React, { ReactNode } from 'react'
 import { mixin } from '../../../mixins'
 import { Children } from '../../../types/react'
 import { IconBox } from '../IconBox'
-import { Ripple } from '../Ripple'
+import { withRipple } from '../Ripple'
 import { ButtonBoxBase } from './_ButtonBoxBase'
 import { ButtonColorP, ButtonVariant } from './_types'
 import { useButtonColor } from './_utils'
@@ -21,27 +21,27 @@ export declare namespace Button {
     } & ButtonColorP
 }
 
-export const Button = ({
-    height = 32,
-    variant = 'filled',
-    color,
-    icon,
-    children,
-    ...props
-}: Button.MainP) => {
-    const buttonColors = useButtonColor(variant, color)
+export const Button = withRipple(
+    ({
+        height = 32,
+        variant = 'filled',
+        color,
+        icon,
+        children,
+        ...props
+    }: Button.MainP) => {
+        const buttonColors = useButtonColor(variant, color)
 
-    return (
-        <Ripple>
+        return (
             <ButtonBox height={height} {...buttonColors} {...props}>
                 {icon && (
                     <ButtonIconBox size={height * 0.5}>{icon}</ButtonIconBox>
                 )}
                 {children}
             </ButtonBox>
-        </Ripple>
-    )
-}
+        )
+    },
+)
 
 const ButtonBox = styled(ButtonBoxBase)<Button.BoxP>(
     {
