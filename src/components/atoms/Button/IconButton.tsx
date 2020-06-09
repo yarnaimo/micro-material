@@ -1,7 +1,7 @@
 import styled from '@emotion/styled'
 import React from 'react'
 import { mixin } from '../../../mixins'
-import { Children } from '../../../types/react'
+import { AsP, Children } from '../../../types/react'
 import { roundToEven } from '../../../utils'
 import { IconBox } from '../IconBox'
 import { withRipple } from '../Ripple'
@@ -10,11 +10,12 @@ import { ButtonColorP, ButtonVariant } from './_types'
 import { useButtonColor } from './_utils'
 
 export declare namespace IconButton {
-    export type MainP = Children & {
-        size?: number
-        variant?: ButtonVariant
-        color: string
-    }
+    export type MainP = Children &
+        AsP & {
+            size?: number
+            variant?: ButtonVariant
+            color: string
+        }
 
     export type BoxP = {
         size: number

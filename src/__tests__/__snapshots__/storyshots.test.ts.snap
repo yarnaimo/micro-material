@@ -4,8 +4,8 @@ exports[`Storyshots Button Basic 1`] = `
 <div
   className="css-1pdwlf"
 >
-  <button
-    className="mdc-ripple-surface css-8tse7d"
+  <a
+    className="mdc-ripple-surface css-nobgju"
     color="#FCB645"
     height={32}
     onBlur={[Function]}
@@ -19,7 +19,7 @@ exports[`Storyshots Button Basic 1`] = `
     style={Object {}}
   >
     ラベル
-  </button>
+  </a>
 </div>
 `;
 
@@ -28,7 +28,7 @@ exports[`Storyshots Button Icon 1`] = `
   className="css-1pdwlf"
 >
   <button
-    className="mdc-ripple-surface css-9fvtz"
+    className="mdc-ripple-surface css-10vdeet"
     color="#FCB645"
     onBlur={[Function]}
     onFocus={[Function]}

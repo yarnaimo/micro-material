@@ -1,7 +1,7 @@
 import styled from '@emotion/styled'
 import React, { ReactNode } from 'react'
 import { mixin } from '../../../mixins'
-import { Children } from '../../../types/react'
+import { AsP, Children } from '../../../types/react'
 import { IconBox } from '../IconBox'
 import { withRipple } from '../Ripple'
 import { ButtonBoxBase } from './_ButtonBoxBase'
@@ -9,12 +9,13 @@ import { ButtonColorP, ButtonVariant } from './_types'
 import { useButtonColor } from './_utils'
 
 export declare namespace Button {
-    export type MainP = Children & {
-        height?: number
-        variant?: ButtonVariant
-        color: string
-        icon?: ReactNode
-    }
+    export type MainP = Children &
+        AsP & {
+            height?: number
+            variant?: ButtonVariant
+            color: string
+            icon?: ReactNode
+        }
 
     export type BoxP = {
         height: number

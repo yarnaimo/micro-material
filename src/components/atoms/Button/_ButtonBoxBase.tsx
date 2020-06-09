@@ -5,6 +5,7 @@ import { ButtonColorP } from './_types'
 export const ButtonBoxBase = styled.button<ButtonColorP>(
     {
         ...mixin.flex({
+            inline: true,
             direction: 'row',
             justifyContent: 'center',
             alignItems: 'center',

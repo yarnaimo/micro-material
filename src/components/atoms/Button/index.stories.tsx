@@ -26,7 +26,7 @@ export const Basic = () => {
     )
 
     return (
-        <Button {...{ height, icon, variant }} color={_colors.orange}>
+        <Button as="a" {...{ height, icon, variant }} color={_colors.orange}>
             {label}
         </Button>
     )
