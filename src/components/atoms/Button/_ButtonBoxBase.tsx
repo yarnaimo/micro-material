@@ -16,6 +16,7 @@ export const ButtonBoxBase = styled.button<ButtonColorP>(
         outline: 'none',
         appearance: 'none',
         cursor: 'pointer',
+        textDecoration: 'none',
 
         fontWeight: 600,
     },

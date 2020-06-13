@@ -1,10 +1,9 @@
 import { css, Global } from '@emotion/core'
 import styled from '@emotion/styled'
 import '@material/ripple/dist/mdc.ripple.css'
-import React from 'react'
-import { Children } from '../types/react'
+import React, { PropsWithChildren } from 'react'
 
-export const RMaterialProvider = ({ children }: Children) => {
+export const RMaterialProvider = ({ children }: PropsWithChildren<{}>) => {
     return (
         <>
             <Global styles={globalStyle}></Global>

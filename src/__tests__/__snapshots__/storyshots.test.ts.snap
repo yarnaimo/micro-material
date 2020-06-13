@@ -40,6 +40,8 @@ exports[`Storyshots Button Basic 1`] = `
   -moz-appearance: none;
   appearance: none;
   cursor: pointer;
+  -webkit-text-decoration: none;
+  text-decoration: none;
   font-weight: 600;
   background: #FCB645;
   color: #FFFFFF;
@@ -59,11 +61,12 @@ exports[`Storyshots Button Basic 1`] = `
 <div
   className="emotion-1"
 >
-  <a
+  <button
     className="mdc-ripple-surface emotion-0"
     color="#FCB645"
     height={32}
     onBlur={[Function]}
+    onClick={[Function]}
     onFocus={[Function]}
     onKeyDown={[Function]}
     onKeyUp={[Function]}
@@ -74,7 +77,7 @@ exports[`Storyshots Button Basic 1`] = `
     style={Object {}}
   >
     ラベル
-  </a>
+  </button>
 </div>
 `;
 
@@ -118,6 +121,8 @@ exports[`Storyshots Button Icon 1`] = `
   -moz-appearance: none;
   appearance: none;
   cursor: pointer;
+  -webkit-text-decoration: none;
+  text-decoration: none;
   font-weight: 600;
   background: #FCB645;
   color: #FFFFFF;
@@ -161,6 +166,7 @@ exports[`Storyshots Button Icon 1`] = `
     className="mdc-ripple-surface emotion-1"
     color="#FCB645"
     onBlur={[Function]}
+    onClick={[Function]}
     onFocus={[Function]}
     onKeyDown={[Function]}
     onKeyUp={[Function]}

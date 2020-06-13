@@ -10,7 +10,10 @@ export default {
     title: 'Button',
 }
 
+const AnchorButton = Button.withTag('a')
+
 export const Basic = () => {
+    const asAnchor = boolean('`a` tag', false)
     const height = number('Height', 32)
 
     const iconBool = boolean('Icon', false)
@@ -25,10 +28,19 @@ export const Basic = () => {
         'filled',
     )
 
-    return (
-        <Button as="a" {...{ height, icon, variant }} color={_colors.orange}>
-            {label}
-        </Button>
+    const props = {
+        onClick: () => console.log('clicked'),
+        height,
+        icon,
+        variant,
+        color: _colors.orange,
+        children: label,
+    }
+
+    return asAnchor ? (
+        <AnchorButton {...props} href=""></AnchorButton>
+    ) : (
+        <Button {...props}></Button>
     )
 }
 
@@ -45,7 +57,11 @@ export const Icon = () => {
     )
 
     return (
-        <IconButton {...{ size, icon, variant }} color={_colors.orange}>
+        <IconButton
+            onClick={() => console.log('clicked')}
+            {...{ size, icon, variant }}
+            color={_colors.orange}
+        >
             <FIcon iconName={iconName}></FIcon>
         </IconButton>
     )

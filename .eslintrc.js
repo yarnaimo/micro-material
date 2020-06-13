@@ -10,6 +10,15 @@ const config = {
                 paths: ['@sindresorhus/is'],
             },
         ],
+        '@typescript-eslint/ban-types': [
+            'error',
+            {
+                types: {
+                    '{}': false,
+                },
+                extendDefaults: true,
+            },
+        ],
     },
 }
 
