@@ -16,12 +16,12 @@ export declare namespace Button {
         icon?: ReactNode
     }>
 
-    export type BoxP = {
+    export type ButtonBoxP = {
         height: number
     } & ButtonColorP
 }
 
-const ButtonBox = styled(ButtonBoxBase)<Button.BoxP>(
+const ButtonBox = styled(ButtonBoxBase)<Button.ButtonBoxP>(
     {
         borderRadius: 6,
     },
@@ -48,8 +48,13 @@ export const Button = asStyled('button', ButtonBox, (Box) => {
     }: Button.MainP) => {
         const buttonColors = useButtonColor(variant, color)
 
+        const boxProps = {
+            height,
+            ...buttonColors,
+            ...props,
+        }
         return (
-            <Box height={height} {...buttonColors} {...props}>
+            <Box {...boxProps}>
                 {icon && (
                     <ButtonIconBox size={height * 0.5}>{icon}</ButtonIconBox>
                 )}

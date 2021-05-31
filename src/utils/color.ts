@@ -4,7 +4,7 @@ export const hsl = (h: number, s: number, l: number) => {
     return csx.hsl(h, s.toString(), l.toString()).toHexString()
 }
 
-export const alpha = (hex: string, a = 1) => {
+export const alpha = (hex: string, a: number) => {
     return cc(hex).fade(a).toString()
 }
 

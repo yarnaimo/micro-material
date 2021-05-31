@@ -7,6 +7,15 @@ import { CSSObject } from '@emotion/styled'
 // const translate = ({ x = 0, y = 0 }: { x?: number; y?: number }) =>
 //     `translate(${x}px, ${y}px)`
 
+export const reset: CSSObject = {
+    margin: 0,
+    padding: 0,
+    border: 'none',
+    outline: 'none',
+    appearance: 'none',
+    textDecoration: 'none',
+}
+
 export const ellipsis: CSSObject = {
     textOverflow: 'ellipsis',
     overflow: 'hidden',

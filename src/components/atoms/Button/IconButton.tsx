@@ -15,12 +15,12 @@ export declare namespace IconButton {
         color: string
     }>
 
-    export type BoxP = {
+    export type IconButtonBoxP = {
         size: number
     } & ButtonColorP
 }
 
-const IconButtonBox = styled(ButtonBoxBase)<IconButton.BoxP>(
+const IconButtonBox = styled(ButtonBoxBase)<IconButton.IconButtonBoxP>(
     {
         borderRadius: '50%',
     },
